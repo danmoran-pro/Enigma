@@ -1,9 +1,14 @@
 class Keys
 
-  attr_reader :date
+  attr_reader :key
 
-  def initialize(date)
-    @date = date
+  def initialize(key)
+    @key = key
+  end
+
+  def convert_to_nums
+    stir_arr = @key.split("")
+    stir_arr.map {|stir| stir.to_i}
   end
 
 
