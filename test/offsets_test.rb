@@ -21,5 +21,30 @@ class OffsetsTest < Minitest::Test
     assert_equal "140919", @offset_2.date
   end
 
+  def test_date_is_squared_and_returns_last_4_numbers
+    assert_equal "4561",@offset_1.squared
+    assert_equal "4561",@offset_2.squared
+  end
+
+  def test_offset_array_can_be_converted
+    expected = {
+      :a=>4,
+      :b=>5,
+      :c=>6,
+      :d=>1
+    }
+
+    assert_equal expected, @offset_1.hashed
+
+    expected = {
+      :a=>4,
+      :b=>5,
+      :c=>6,
+      :d=>1
+    }
+
+    assert_equal expected, @offset_2.hashed
+  end
+
 
 end
