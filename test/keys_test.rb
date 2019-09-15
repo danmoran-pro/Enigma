@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require './lib/key'
 require 'mocha/minitest'
+require './lib/key'
 
 
 class KeyTest < Minitest::Test
@@ -36,7 +36,7 @@ class KeyTest < Minitest::Test
         :c=>89,
         :d=>99
       }
-      
+
       @ran_num_1.get_keys.stubs(:keys).returns(expected_2)
     end
 end
