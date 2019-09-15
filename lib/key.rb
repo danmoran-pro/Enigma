@@ -9,14 +9,12 @@ class Key
     @keys = keys
   end
 
-  # def convert_to_nums
-  #   stir_arr = @keys.split("")
-  #   stir_arr.map {|stir| stir.to_i}
-  # end
-  #
-  # def maps
-  #   num_arr = @keys.convert_to_nums
-  #   num_arr.map.with_index {|num, index| key[index] + key[index +1].to_s}
-  # end
-
+  def get_keys
+  {
+    a: @keys[0..1].to_i,
+    b: @keys[1..2].to_i,
+    c: @keys[2..3].to_i,
+    d: @keys[3..4].to_i
+  }
+  end
 end
