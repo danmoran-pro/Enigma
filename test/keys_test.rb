@@ -28,7 +28,7 @@ class KeyTest < Minitest::Test
         :d=>45
       }
 
-      assert_equal expected, @ran_num_2.get_keys
+      assert_equal expected, @ran_num_2.create_keys
 
       expected_2 = {
         :a=>67,
@@ -37,6 +37,6 @@ class KeyTest < Minitest::Test
         :d=>99
       }
 
-      @ran_num_1.get_keys.stubs(:keys).returns(expected_2)
+      @ran_num_1.create_keys.stubs(:keys).returns(expected_2)
     end
 end
