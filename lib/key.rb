@@ -9,7 +9,7 @@ class Key
     @keys = keys
   end
 
-  def get_keys
+  def create_keys
   {
     a: @keys[0..1].to_i,
     b: @keys[1..2].to_i,
