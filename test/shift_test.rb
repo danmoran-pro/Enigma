@@ -1,7 +1,4 @@
 require './test/test_helper'
-require './lib/offsets'
-require './lib/key'
-require './lib/shift'
 require 'pry'
 
 

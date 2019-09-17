@@ -1,5 +1,4 @@
 require './test/test_helper'
-require './lib/offsets'
 require 'pry'
 
 
@@ -16,7 +15,7 @@ class OffsetsTest < Minitest::Test
 
   def test_can_take_date_or_use_current_date
     @offset_1.date.stubs(:date).returns("021093")
-    
+
     assert_equal "140919", @offset_2.date
   end
 
