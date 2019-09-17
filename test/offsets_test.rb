@@ -15,12 +15,13 @@ class OffsetsTest < Minitest::Test
   end
 
   def test_can_take_date_or_use_current_date
-    assert_equal "160919", @offset_1.date
+    @offset_1.date.stubs(:date).returns("021093")
+    
     assert_equal "140919", @offset_2.date
   end
 
   def test_date_is_squared_and_returns_last_4_numbers
-    assert_equal "4561",@offset_1.squared
+    @offset_1.date.stubs(:keys).returns("021093")
     assert_equal "4561",@offset_2.squared
   end
 

@@ -16,7 +16,6 @@ class Offsets
 
   def hashed
     offsets_arr = squared
-
     {
       a: offsets_arr[0].to_i,
       b: offsets_arr[1].to_i,
