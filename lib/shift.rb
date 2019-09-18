@@ -5,6 +5,8 @@ class Shift
     @offset = offset
   end
 
+
+
   def create_shift
     keys = @key.create_keys
     offset = @offset.hashed

@@ -10,7 +10,7 @@ class Offsets
   end
 
   def squared
-    squared = (@date.to_i * @date.to_i).to_s
+    squared = (date.to_i * date.to_i).to_s
     squared[-4..-1]
   end
 
